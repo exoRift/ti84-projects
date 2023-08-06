@@ -1,0 +1,86 @@
+Welcome to Super BASIC! Made by mets11rap!
+
+This is a simple program which allows you to write programs WAY faster! It converts special commands, prefixes, keys, and data into a fully working BASIC program.
+
+In the start menu, you're able to configure settings. These will enable/disable the use of any of the classes of data. Press the numbers on the keypad labeled to the options to toggle them and simply press CLEAR when done.
+Once done configuring the settings, go to the convert option and type in the READ program and a non-existent program which it creates and writes to and it will do the rest for you! It will even time the seconds (This does not slow down the conversion.)!
+
+NOTES ABOUT THE INPUTS BEFORE CONVERSION
+Putting in a nonexistent READ program will quit.
+If the READ program and WRITE program are the same, it will quit.
+If the WRITE program already exists, it will prompt you with a continue question. "Add on" will push the previous code in the program down. "Overwrite" will, well, overwrite it.
+
+1 Line notes:
+A singular key can only be used once on each line. (":)(9+"HI"→)(9:" would not work while "":)RSHI"→)(9" would.)
+With all the settings on, each line is ~1s.
+
+Documentation:
+
+To prevent a file from being read by the converter, simply have "[LOCK]" as the first line. (This is pretty much only useful for AppVars because if the person has Doors, they can unlock it. (You also can't have an icon.))
+
+The first line of the READ program is the title. i (The imaginary number symbol) must be the start of the line. iTEST would make the WRITE program TEST. If there is no specification, the WRITE program will automatically be "1CONV".
+
+[COMMANDS Used as THE line. Anything after them will be deleted WITH EXCEPTIONS! Starred commands MUST have something after them.
+|/P = Pause
+|/P Will turn into Pause 
+|
+|/I = Invert
+|/I Will turn into real(0,3,2 which inverts the colors of the screen.
+|
+|/CD = ClrDraw
+|/CD Will turn into ClrDraw
+|
+|/CH = ClrHome
+|/CH Will turn into ClrHome
+|
+|/K = getKey*
+|/KK Will turn into getKey→K
+|
+|/L = Lbl*
+|/L24 Will turn into Lbl 24
+|
+|/G = Goto*
+|/GH Will turn into Goto H
+|
+|//VARFn = +/- 1
+|//A+ Will turn into A+1→A and //A- Will turn into A-1→A (This works for * and -, but they're pointless.)
+|
+|/XS = xLIBC Setup
+[/XS Will turn into real(0,1,1:real(8,1,0 which sets up normal halfmode for xLIBC
+
+[PREFIXES Used at the beginning (- is used as the second index) of the line.
+|. = real(
+|.7,5,0,0,10,10,0 Will turn into real(7,5,0,0,10,10,0
+|Don't worry about periods/decimals in numbers/sentences because it pays attention to context.
+|TIP: When storing .# to a number, just put 0.# so it doesn't turn into a real(.
+|
+|-(Negative Sign) = det( *(Must have text before (Ans) and after.)
+|0-0 Will turn into 0:det(0
+|This, as well, pays attention to context.
+|TIP: When using a det( without an Ans required, just use det( from the catalog.
+|
+|* = Disp 
+|*)(9 Will turn into Disp Str9
+[*"HI" Will turn into Disp "HI"
+
+[KEYS Used anywhere in the line.
+|)(# = String
+|"DATA"→)(9: (DATA must be in quotes) Will turn into "DATA"→Str9
+|
+|)RS = rowSwap(
+|")RSHELLO" Will turn into "rowSwap(HELLO"
+|
+|)L = L(List L)
+|)LHELLO Will turn into LHELLO
+|
+|)> = Filled Arrow
+|)> Will turn into a filled arrow
+|
+|)A = Ans
+[*)A Will turn into "Disp Ans"
+
+A closing bracket at the beginning of a line will prevent detection on that line.
+
+NOTE: Doing anything wrong will show a syntax error in the program, but I assure you, something's wrong with your program. You can check where the WRITE program left off to see where it errored.
+
+Have a suggestion? Contact me on Cemetech with a PM, Message, or Review!
